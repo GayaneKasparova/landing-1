@@ -1,0 +1,210 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    color: #316167;
+}
+
+.lg-on {
+    overflow: hidden;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 1px 10px #487782;
+    background-color: #fff;
+    transition: all .5s ease;
+    z-index: 99999;
+}
+
+header.transparent {
+    background-color: #d2f6ff42;
+}
+
+header div {
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 70px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 10px;
+    padding: 5px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+
+nav ul li a:hover {
+    color: #36cde0;
+}
+
+.transparent nav ul li a:hover {
+    color: white;
+}
+
+.container {
+    width: calc(100% - 30px);
+    margin: auto;
+    padding: 10px 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(19, 202, 226);
+    border-color: white !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 4px solid rgb(19, 202, 226);
+}
+
+main > div:not(.banner) {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bgimage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: all .8s ease;
+}
+
+.banner.fullHeight {
+    min-height: 100vh;
+    max-height: 300vh;
+}
+
+.banner div {
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+
+.banner p {
+    font-weight: 600;
+}
+
+.banner .btn {
+    box-shadow: 0 1px 6px #5f6e71;
+}
+
+.operators div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.operators div a {
+    display: inline-block;
+    max-width: 150px;
+}
+
+.operators div a img {
+    width: 100%;
+    height: auto;
+    transition: all .3s ease;
+}
+
+.operators div a:hover img {
+    transform: scale(1.1);
+}
+
+.accordion p {
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+
+.accordion p.active {
+    max-height: calc(100% + 100px);
+}
+
+#lightgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lightgallery a {
+    display: inline-block;
+    width: 30%;
+    max-height: 200px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#lightgallery a img {
+    width: 100%;
+    height: auto;
+    transition: all .3s ease;
+}
+
+#lightgallery a:hover img {
+    transform: scale(1.1);
+}
+
+#myLandbot {
+    height: calc(100vh - 70px);
+    padding-top: 90px;
+}
+#hu-footer {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .banner div {
+        padding: 60px 0;
+    }
+
+    .container {
+        width: 80%;
+        padding: 15px 30px;
+    }
+
+    #myLandbot {
+        padding-top: 100px;
+    }
+
+}
