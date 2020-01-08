@@ -32,9 +32,11 @@ header.transparent {
     background-color: #d2f6ff42;
 }
 
-header div {
+header div.container {
     height: 70px;
     margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,12 +189,16 @@ main > div:not(.banner) {
 
 #myLandbot {
     height: calc(100vh - 70px);
-    padding-top: 90px;
+    padding-top: 70px;
 }
 #hu-footer {
     display: none !important;
 }
-
+@media (max-width: 768px) {
+    .operators div a {
+        width: 42%;
+    }
+}
 @media (min-width: 768px) {
     .banner div {
         padding: 60px 0;
@@ -204,7 +210,7 @@ main > div:not(.banner) {
     }
 
     #myLandbot {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
 }
