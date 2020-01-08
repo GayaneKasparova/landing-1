@@ -139,6 +139,7 @@ main > div:not(.banner) {
 .operators div a {
     display: inline-block;
     max-width: 150px;
+    margin: 5px 0;
 }
 
 .operators div a img {
