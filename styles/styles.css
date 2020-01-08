@@ -195,11 +195,18 @@ main > div:not(.banner) {
 #hu-footer {
     display: none !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
     .operators div a {
         width: 42%;
     }
 }
+
+ @media (min-width: 451px) and (max-width: 767px) {
+     .operators div a {
+         width: 31%;
+     }
+ }
+
 @media (min-width: 768px) {
     .banner div {
         padding: 60px 0;
